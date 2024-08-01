@@ -1,4 +1,4 @@
-package com.appsonair;
+package com.example.appsonaircore;
 
 import android.content.Context;
 import android.net.ConnectivityManager;
@@ -11,7 +11,7 @@ import androidx.annotation.NonNull;
 
 public class NetworkService {
 
-    public static void checkConnectivity(Context context, UpdateNetworkState updateNetworkState) {
+    public static void checkConnectivity(Context context, com.appsonair.UpdateNetworkState updateNetworkState) {
         ConnectivityManager.NetworkCallback networkCallback = new ConnectivityManager.NetworkCallback() {
             @Override
             public void onAvailable(@NonNull Network network) {
