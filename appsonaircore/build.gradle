@@ -10,10 +10,14 @@ android {
     defaultConfig {
         minSdk 24
         versionCode 1
-        versionName "1.0.4"
+        versionName "1.0.5"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
+    }
+
+    lintOptions {
+        disable 'TypographyFractions','TypographyQuotes'
     }
 
     buildTypes {
